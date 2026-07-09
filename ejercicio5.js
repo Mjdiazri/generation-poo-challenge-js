@@ -1,4 +1,4 @@
-
+const prompt = require("prompt-sync")();
 
 function Vehiculo(marca, modelo, anio, kilometraje, precio){
     this.marca = marca;
@@ -7,3 +7,6 @@ function Vehiculo(marca, modelo, anio, kilometraje, precio){
     this.kilometraje = kilometraje;
     this.precio = precio;
 }
+
+let user
+

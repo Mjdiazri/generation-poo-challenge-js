@@ -22,7 +22,7 @@ function Estudiante(nombre, curso, semestre, notas){
 
 
     this.mostrar = function(){
-        console.log(`Nombre estudiante: ${this.nombre}, \nNombre del curso: ${this.curso} \nSemestre: ${this.semestre} \nEstado Aprobacion: ${this.aprobado}`);
+        console.log(`Nombre estudiante: ${this.nombre}, \nNombre del curso: ${this.curso} \nSemestre: ${this.semestre} \nEstado Aprobacion: ${this.aprobado} \nNotas obtenidas: ${this.notas}`);
     }
 }
 
@@ -32,13 +32,13 @@ const estudiante2 = new Estudiante("Ana Maria Silva", "Logica Programacion", 5, 
 const estudiante3 = new Estudiante("Luis Tobon", "Logica Programacion", 2, [1.5, 3.0, 1.8]);
 const estudiante4 = new Estudiante("Sofia Gomez", "Logica Programacion", 4, [3.5, 4.0, 3.2]);
 console.log("\n\n******* EJERCICIO 3 *******\n\n");
-console.log("Listado de estudiantes del curso:\n");
+console.log("Listado de estudiantes de la cohorte 6:\n");
 console.log("------------------------");
 estudiante1.mostrar();
-console.log("------------------------");
+console.log("------------------------\n");
 estudiante2.mostrar();
-console.log("------------------------");
+console.log("------------------------\n");
 estudiante3.mostrar();
-console.log("------------------------");
+console.log("------------------------\n");
 estudiante4.mostrar();
-console.log("------------------------");
+console.log("------------------------\n");

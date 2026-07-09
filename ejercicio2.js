@@ -15,10 +15,10 @@ const mascotaEngativa = new Mascota("Luna", "Gato", "Siamés", 2, 4.5);
 const mascotaCandelaria = new Mascota("Coco", "Conejo", "Enano Neerlandés", 1, 1.2);
 
 console.log("\n\n******* EJERCICIO 2 *******\n\n");
-console.log("Presentacion de mascotas:\n");
+console.log("Presentacion de mascotas 😸🐶🐷🐰🐹:\n");
 console.log(mascotaKennedy.presentar());
-console.log("------------------------");
+console.log("------------------------\n");
 console.log(mascotaEngativa.presentar());
-console.log("------------------------");
+console.log("------------------------\n");
 console.log(mascotaCandelaria.presentar());
-console.log("------------------------")
+console.log("------------------------\n")

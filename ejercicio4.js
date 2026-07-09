@@ -7,11 +7,11 @@ function Libro(titulo, autor, anio, area, prestado){
     this.prestar = function(){
         if (this.prestado === false){
             this.prestado = true;
-            console.log("Prestamo ok");
+            console.log("*** Prestamo ok ✔ ***");
         } else {
-            console.log("-------------------");
-            console.log("Libro no disponible")
-            console.log("--------------------");
+            console.log("\n-------------------");
+            console.log("🚩 Libro no disponible 🚩")
+            console.log("--------------------\n");
 
         }
     }
@@ -19,11 +19,11 @@ function Libro(titulo, autor, anio, area, prestado){
     this.devolver = function(){
         if(this.prestado === true){
             this.prestado = false;
-            console.log("Devolucion ok");
+            console.log("*** Devolucion ok ✔ ***");
         } else {
-            console.log("------------------------");
-            console.log("Alerta, el libro no registra en prestamo")
-            console.log("------------------------");
+            console.log("\n------------------------");
+            console.log(" 🚩 Alerta, el libro no registra en prestamo 🚩")
+            console.log("------------------------\n");
         }
     }
 }
