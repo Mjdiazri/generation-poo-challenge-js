@@ -9,15 +9,12 @@ function Estudiante(nombre, curso, semestre, notas){
     let promedio=0;
     for(let i = 0; i < this.notas.length; i++){        
         sumaNotas += this.notas[i];
-        console.log(sumaNotas)
         promedio = sumaNotas/this.notas.length;
     }
     if (promedio > 3.0){
             this.aprobado = "aprobado";
-            console.log(promedio)
         } else {
             this.aprobado = "reprobado";
-            console.log(promedio)
         }        
 
 
