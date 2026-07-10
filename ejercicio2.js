@@ -3,10 +3,10 @@ function Mascota(nombre, especie, raza, edad, peso){
     this.especie = especie;
     this.raza = raza;
     this.edad = edad;
-    this. peso = peso;
+    this.peso = peso;
 
     this.presentar = function(){
-        return `Hola mi nombre es ${this.nombre}, soy un@ ${raza} (${this.especie}), tengo ${this.edad} año(s) y peso ${this.peso} kg.`;
+        return `Hola mi nombre es ${this.nombre}, soy un@ ${this.raza} (${this.especie}), tengo ${this.edad} año(s) y peso ${this.peso} kg.`;
     }
 }
 

@@ -23,7 +23,7 @@ function Vehiculo(marca, modelo, anio, kilometraje, precio){
     this.aplicarDescuento = function(){
         let descuento = 0.15;
         if(this.precio >= 100000000){
-            this.precio = precio - (precio*descuento)
+            this.precio = this.precio - (this.precio*descuento)
         }
         this.mostrarDatosVehiculo();
     }
@@ -59,15 +59,15 @@ preguntarDatos();
 const primerVehiculo = new Vehiculo(userMarca, userModelo, userAnio, userKilometraje, userPrecio );
 preguntarDatos();
 const segundoVehiculo = new Vehiculo(userMarca, userModelo, userAnio, userKilometraje, userPrecio);
-//preguntarDatos();
-//const tercerVehiculo = new Vehiculo(userMarca, userModelo, userAnio, userKilometraje, userPrecio);
+preguntarDatos();
+const tercerVehiculo = new Vehiculo(userMarca, userModelo, userAnio, userKilometraje, userPrecio);
 
 
 //Funcion mostrar datos vehiculo
 console.log("\n\n--- Ficha del vehiculo ---\n");
 primerVehiculo.mostrarDatosVehiculo();
 segundoVehiculo.mostrarDatosVehiculo();
-//tercerVehiculo.mostrarDatosVehiculo();
+tercerVehiculo.mostrarDatosVehiculo();
 
 
 //Funcion actualizar precio
